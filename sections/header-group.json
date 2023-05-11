@@ -1,0 +1,62 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Savvy customers are getting 10% off: click here find out how!",
+            "text_alignment": "center",
+            "color_scheme": "background-2",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "settings": {
+      }
+    },
+    "f475e3c2-7f47-4262-8f46-30ead2b95ff7": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "<style>\n.header__heading-logo-wrapper {\n  min-height: 80px;\n}\n.header__heading-logo {\n  position: absolute;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  height: 100%;\n  width: auto;\n  z-index: 0;\n}\n<\/style>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 20,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "f475e3c2-7f47-4262-8f46-30ead2b95ff7",
+    "header"
+  ]
+}

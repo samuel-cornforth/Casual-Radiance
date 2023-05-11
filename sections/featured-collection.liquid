@@ -82,7 +82,8 @@
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
               show_quick_add: section.settings.enable_quick_add,
-              section_id: section.id
+              section_id: section.id,
+              inventory_warn_threshold: section.settings.inventory_warn_threshold
             %}
           </li>
         {%- else -%}
@@ -392,16 +393,26 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     },
+
+
+
     {
       "type": "header",
       "content": "Custom Options"
     },
     {
-      "type": "checkbox",
-      "id": "show_inventory",
-      "label": "(Custom) Show inventory warnings",
-      "default": false
+      "type": "range",
+      "id": "inventory_warn_threshold",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "unit": " left",
+      "label": "(Custom) Threshold to warn user of stock level - set to 0 to not show",
+      "default": 0
     }
+
+
+
   ],
   "presets": [
     {

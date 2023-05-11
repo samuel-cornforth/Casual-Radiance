@@ -14,6 +14,8 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
 
+  - inventory_warn_threshold: {Number} (Custom) At what point to warn customer of low stock
+
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
@@ -197,6 +199,16 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '' %}
+            
+            <!-- START CUSTOM EDIT -->
+            {% assign variant_for_info = card_product.variants[0] %}
+            {% if card_product.selected_variant %}
+              {% assign variant_for_info = card_product.selected_variant%}
+            {% endif %}
+            {% if inventory_warn_threshold and inventory_warn_threshold > 0 and variant_for_info.inventory_quantity > 0 and inventory_warn_threshold >= card_product.selected_variant.inventory_quantity %}
+            <p style="color: red;">Hurry, only {{ variant_for_info.inventory_quantity }} left in stock!</p>
+            {% endif %}
+            <!-- END CUSTOM EDIT -->
           </div>
         </div>
         {%- if show_quick_add -%}

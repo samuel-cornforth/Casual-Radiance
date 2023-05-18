@@ -467,5 +467,10 @@
       "message": "Message",
       "max_characters": "{{ max_chars }} characters max"
     }
+  },
+  "custom": {
+    "custom_product": {
+      "product_stock_urgency": "Quick! There's only {{inventory_count}} left!"
+    }
   }
 }

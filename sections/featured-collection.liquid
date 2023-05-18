@@ -89,7 +89,8 @@
         {%- else -%}
           {%- for i in (1..4) -%}
             <li class="grid__item">
-              {% render 'card-product', show_vendor: section.settings.show_vendor %}
+              {% render 'card-product', show_vendor: section.settings.show_vendor,
+                inventory_warn_threshold: section.settings.inventory_warn_threshold %}
             </li>
           {%- endfor -%}
         {%- endfor -%}
@@ -393,9 +394,6 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     },
-
-
-
     {
       "type": "header",
       "content": "Custom Options"
@@ -406,7 +404,7 @@
       "min": 0,
       "max": 25,
       "step": 1,
-      "unit": " left",
+      "unit": "x",
       "label": "(Custom) Threshold to warn user of stock level - set to 0 to not show",
       "default": 0
     }

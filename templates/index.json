@@ -54,7 +54,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured Products",
+        "title": "Hot Products",
         "heading_size": "h1",
         "description": "<p>Get them before they sell out!<\/p>",
         "show_description": false,
@@ -72,10 +72,11 @@
         "show_vendor": true,
         "show_rating": false,
         "enable_quick_add": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 60,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "inventory_warn_threshold": 10
       }
     },
     "7d8a6581-5197-4d4a-bf59-4dff5092b53e": {
@@ -84,36 +85,43 @@
         "template--19081728098606__7d8a6581-5197-4d4a-bf59-4dff5092b53e-16837853482c2cac2d-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "bracelets"
           }
         },
         "template--19081728098606__7d8a6581-5197-4d4a-bf59-4dff5092b53e-16837853482c2cac2d-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "earings"
           }
         },
         "template--19081728098606__7d8a6581-5197-4d4a-bf59-4dff5092b53e-16837853482c2cac2d-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "necklaces"
+          }
+        },
+        "b6e4b422-3960-484e-9c64-6bf1a3d8d8cf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rings"
           }
         }
       },
       "block_order": [
         "template--19081728098606__7d8a6581-5197-4d4a-bf59-4dff5092b53e-16837853482c2cac2d-0",
         "template--19081728098606__7d8a6581-5197-4d4a-bf59-4dff5092b53e-16837853482c2cac2d-1",
-        "template--19081728098606__7d8a6581-5197-4d4a-bf59-4dff5092b53e-16837853482c2cac2d-2"
+        "template--19081728098606__7d8a6581-5197-4d4a-bf59-4dff5092b53e-16837853482c2cac2d-2",
+        "b6e4b422-3960-484e-9c64-6bf1a3d8d8cf"
       ],
       "settings": {
         "title": "Shop by Category",
         "heading_size": "h1",
-        "image_ratio": "portrait",
-        "columns_desktop": 3,
+        "image_ratio": "square",
+        "columns_desktop": 2,
         "color_scheme": "background-1",
         "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -155,6 +163,36 @@
         "padding_bottom": 0
       }
     },
+    "a2f6bac4-7ffe-471b-8a5d-0e2be210adac": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19081728098606__a2f6bac4-7ffe-471b-8a5d-0e2be210adac-168379063691d844a8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Shop With Us?",
+            "heading_size": "h1"
+          }
+        },
+        "template--19081728098606__a2f6bac4-7ffe-471b-8a5d-0e2be210adac-168379063691d844a8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Affordable Elegance:<\/strong> Our jewelry is crafted with high-quality materials that are both beautiful and budget-friendly, so you can enjoy luxurious style without the hefty price tag.<\/p><p><strong>Versatile Designs:<\/strong> From minimalist necklaces to statement earrings, our collection features versatile pieces that can be effortlessly dressed up or down to suit any occasion.<\/p><p><strong>Handcrafted with Love:<\/strong> Each piece in our collection is thoughtfully designed and meticulously crafted by skilled artisans, ensuring exceptional quality and attention to detail.<\/p><p><strong>Inclusive & Relatable:<\/strong> We pride ourselves on creating jewelry that resonates with real people, celebrating the beauty and diversity of our customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19081728098606__a2f6bac4-7ffe-471b-8a5d-0e2be210adac-168379063691d844a8-0",
+        "template--19081728098606__a2f6bac4-7ffe-471b-8a5d-0e2be210adac-168379063691d844a8-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image-with-text-1": {
       "type": "image-with-text",
       "blocks": {
@@ -168,14 +206,14 @@
         "cbd3efce-aa2a-4447-8eed-6620ab304d22": {
           "type": "text",
           "settings": {
-            "text": "<p>Ask us about our custom jewelry design service!<\/p>",
+            "text": "<p>Click below to ask us about our custom jewelry design service!<\/p>",
             "text_style": "subtitle"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "About Custom Jewelry",
+            "button_label": "Custom Jewelry",
             "button_link": "shopify:\/\/collections\/all"
           }
         }
@@ -209,6 +247,7 @@
     "featured-collection",
     "7d8a6581-5197-4d4a-bf59-4dff5092b53e",
     "image-with-text",
+    "a2f6bac4-7ffe-471b-8a5d-0e2be210adac",
     "image-with-text-1"
   ]
 }

@@ -205,8 +205,8 @@
             {% if card_product.selected_variant %}
               {% assign variant_for_info = card_product.selected_variant%}
             {% endif %}
-            {% if inventory_warn_threshold and inventory_warn_threshold > 0 and variant_for_info.inventory_quantity > 0 and inventory_warn_threshold >= card_product.selected_variant.inventory_quantity %}
-            <p style="color: red;">Hurry, only {{ variant_for_info.inventory_quantity }} left in stock!</p>
+            {% if inventory_warn_threshold and inventory_warn_threshold > 0 and variant_for_info.inventory_quantity > 0 and inventory_warn_threshold >= variant_for_info.inventory_quantity %}
+              <p style="color: red;">Hurry, only {{ variant_for_info.inventory_quantity }} left in stock!</p>
             {% endif %}
             <!-- END CUSTOM EDIT -->
           </div>
